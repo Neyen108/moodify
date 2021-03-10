@@ -21,6 +21,11 @@
   text-decoration: none;
   color: #ffffff !important;
   opacity: 87%;
+  text-shadow: -5px 5px 0 #000000;
+}
+
+.brand-text:hover {
+  transform: translateY(-2px);
 }
 
 .title {
@@ -51,7 +56,7 @@
   font-size: 5rem;
 
   color: #ee7070;
-  text-shadow: -5px 5px 0px #000000;
+  text-shadow: -8px 8px 0px #000000;
 }
 
 .pinkish {
@@ -62,10 +67,16 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+  text-shadow: -5px 5px 0px #000000;
+}
+
+.px-3 {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .content-body {
-  min-height: 92.5vh;
+  min-height: 100vh;
 }
 
 /* Make profile picture circular */
@@ -217,15 +228,15 @@
 }
 
 .tan {
-  background-color: #fcea9a !important;
+  background-color: #121212 !important;
 }
 
 .tan > * {
-  background-color: #fcea9a !important;
+  background-color: #121212 !important;
 }
 
 .tan > * > * {
-  background-color: #fcea9a !important;
+  background-color: #121212 !important;
 }
 
 .center-container {
