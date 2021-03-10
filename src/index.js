@@ -24,11 +24,13 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+import AppRouter from './router/AppRouter';
+
 import './stylesheet.css';
 
 ReactDOM.render(
   <div>
-    <h1>Hello</h1>
+    <AppRouter />
   </div>,
   document.getElementById('root')
 );
