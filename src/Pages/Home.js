@@ -8,6 +8,7 @@ const Home = () => {
     REACT_APP_SPOTIFY_AUTHORIZE_URL,
     REACT_APP_SPOTIFY_REDIRECT_URL,
   } = process.env;
+  console.log(REACT_APP_SPOTIFY_REDIRECT_URL);
 
   //space separated list of scopes
   const scopes = 'user-read-private user-read-recently-played';
