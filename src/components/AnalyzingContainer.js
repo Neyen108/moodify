@@ -11,12 +11,12 @@ const AnalyzingContainer = ({ songsArray, userProfile }) => {
     songsArray.forEach((song, i) => {
       setTimeout(() => {
         setCurrentSong(song);
-      }, i * 150);
+      }, i * 250);
     });
 
     setTimeout(() => {
       setFinishedAnalysis(true);
-    }, 3150);
+    }, 4000);
   }, []);
 
   //first wait for async/await to finish
