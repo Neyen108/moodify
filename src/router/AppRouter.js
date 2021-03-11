@@ -5,6 +5,7 @@ import Home from '../Pages/Home';
 import SpotifyRedirect from '../Pages/SpotifyRedirect';
 import YourMood from '../Pages/YourMood';
 import About from '../Pages/About';
+import NotFound from '../Pages/NotFound';
 
 const AppRouter = () => {
   return (
@@ -16,6 +17,7 @@ const AppRouter = () => {
             <Route path='/about' component={About}></Route>
             <Route path='/redirect' component={SpotifyRedirect} />
             <Route path='/yourmood' component={YourMood} />
+            <Route path='/notfound' component={NotFound} />
           </Switch>
         </div>
       </BrowserRouter>
