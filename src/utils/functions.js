@@ -84,3 +84,35 @@ export const getSongsAnalysisArray = async (songArr) => {
   }
   return audioData;
 };
+
+//change date string to readable format
+export const fixDate = (date) => {
+  if (typeof date === 'string') {
+    const year = date.slice(0, 4);
+    const month = date.slice(5, 7);
+    const day = date.slice(8, 10);
+    const time = date.slice(11, 16);
+    const text = `${day}/${month}/${year} at ${time}`;
+    return text;
+  }
+};
+
+//Add ellipse to long song/album names
+export const formatStr = (str) => {
+  if (typeof str === 'string' && str.length > 18) {
+    return str.substr(0, 18) + '...';
+  } else {
+    return str;
+  }
+};
+
+export const fixCapitalization = (str) => {
+  const splitStr = str.split('-');
+  return (
+    splitStr[0].charAt(0).toUpperCase() +
+    splitStr[0].slice(1) +
+    ' ' +
+    splitStr[1].charAt(0).toUpperCase() +
+    splitStr[1].slice(1)
+  );
+};
