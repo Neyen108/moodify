@@ -62,7 +62,7 @@ export const getRecentlyPlayedTracks = async (accessToken) => {
 };
 
 //get Song Analysis from the song array
-export const getSongsAnalysisArray = async (songArr) => {
+export const getSongsAnalysisArray = async (songArr, accessToken) => {
   //create Array of only Song IDS
   const ids = songArr.map((song) => {
     return song.track.id;
@@ -70,7 +70,7 @@ export const getSongsAnalysisArray = async (songArr) => {
   const stringIds = ids.toString();
 
   //get analysis from Spotify API
-  const data = await getSongsAnalysis(stringIds);
+  const data = await getSongsAnalysis(stringIds, accessToken);
   const audioData = data.audio_features;
 
   //Add song properties (name/album/etc) from initial song array
