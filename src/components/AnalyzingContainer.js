@@ -16,7 +16,7 @@ const AnalyzingContainer = ({ songsArray, userProfile }) => {
 
     setTimeout(() => {
       setFinishedAnalysis(true);
-    }, 4000);
+    }, 6000);
   }, []);
 
   //first wait for async/await to finish

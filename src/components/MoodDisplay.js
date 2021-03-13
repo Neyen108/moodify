@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { calculateMood } from '../utils/moodDetector';
 import Loading from './Loading';
 import smiley from '../assets/smiley.jpg';
+import MoodResultHeader from './MoodResultHeader';
+import FullBreakdown from './FullBreakdown';
+import Footer from './Footer';
 
 const MoodDisplay = ({ songs, profile }) => {
   const [finishedAnalysis, setFinishedAnalysis] = useState(false);
@@ -14,7 +17,7 @@ const MoodDisplay = ({ songs, profile }) => {
   useEffect(() => {
     setTimeout(() => {
       setFinishedAnalysis(true);
-    }, 3500);
+    }, 2000);
   });
 
   const profileImg = profile.images.length > 0 ? profile.images[0].url : smiley;
