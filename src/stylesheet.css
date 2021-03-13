@@ -59,16 +59,16 @@
   text-shadow: -8px 8px 0px #000000;
 }
 
-.pinkish {
-  color: #ee7070;
-}
-
 .bold {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.87);
   text-shadow: -5px 5px 0px #000000;
+}
+
+.pinkish {
+  color: #ee7070;
 }
 
 .px-3 {
@@ -339,4 +339,12 @@
 
 .row {
   max-width: fit-content;
+}
+
+.greenish {
+  color: #1ed760;
+}
+
+.violetish {
+  color: #a055fc;
 }
