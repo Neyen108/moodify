@@ -1,4 +1,4 @@
-# [Moodify] (https://spotifyworldcharts.netlify.app/)    
+# Moodify (https://moodify-site.netlify.app/)    
 
 A web-based mood detector, that detects the mood based on your recently played songs from Spotify.   
 Uses Spotify’s APIs for fetching and analysing the tracks and extracting a song’s data.       
